@@ -1,0 +1,64 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 15px 30px;
+  padding-left: 60px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-initial,
+.btn-done,
+.btn-done .icon,
+.btn-initial .icon {
+  transition: 1s;
+}
+
+.btn-initial {
+  background-color: #222831;
+}
+
+.btn-initial .icon-up {
+  top: 50%;
+}
+
+.btn-initial .icon-done {
+  top: 200%;
+}
+
+.btn-done {
+  background-color: #29a19c;
+}
+
+.btn-done .icon-up {
+  top: -200%;
+}
+
+.btn-done .icon-done {
+  top: 50%;
+}
+
+.icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid rgba(240, 240, 255, 0.7);
+}
