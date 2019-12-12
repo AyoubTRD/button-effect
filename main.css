@@ -1,64 +1,70 @@
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
+}
+
+.btn {
+  padding: 15px 25px;
+  padding-left: 60px;
+  border: none;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.icon {
+  transition: 1s;
+  height: 30px;
+  width: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  left: 5%;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.btn {
-  padding: 15px 30px;
-  padding-left: 60px;
-  border-radius: 25px;
-  border: none;
-  color: white;
-  font-size: 17px;
-  font-weight: 700;
-  position: relative;
-  outline: none;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.btn-initial,
-.btn-done,
-.btn-done .icon,
-.btn-initial .icon {
-  transition: 1s;
-}
-
 .btn-initial {
+  transition: 1s;
   background-color: #222831;
 }
 
 .btn-initial .icon-up {
+  transition: 1s;
   top: 50%;
 }
 
 .btn-initial .icon-done {
+  transition: 1s;
   top: 200%;
 }
 
 .btn-done {
+  transition: 1s;
   background-color: #29a19c;
 }
 
 .btn-done .icon-up {
+  transition: 1s;
   top: -200%;
 }
 
 .btn-done .icon-done {
   top: 50%;
-}
-
-.icon {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 5%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 3px solid rgba(240, 240, 255, 0.7);
 }
